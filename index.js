@@ -4,7 +4,7 @@ dotenv.config()
 
 const application = express()
 const PORT = 3000
-
+console.log(process.env.DATABASE_URL)
 application.use(express.json())
 
 application.listen(PORT, () => {
